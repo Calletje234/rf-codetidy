@@ -15,7 +15,6 @@ class ChangeSpacingSettings(ModelTransformer):
         self.changed_lines += 1
         space = Statement.from_tokens([Token(Token.EOL, '\n')])
         node.body.insert(-1, space)
-        print("Inserted Empty Line")
         return self.generic_visit(node)
 
     def get_changed_lines(self):

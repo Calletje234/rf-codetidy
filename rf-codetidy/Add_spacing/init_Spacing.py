@@ -50,7 +50,7 @@ class StartSpacing:
 
     def change_spacing(self, section_item):
         if section_item == "setting_section":
-            self.setting.visit(self.model)
+            self.setting.visit_SettingSection(self.model)
             self.model.save(self.source)
         elif section_item == "testcase_section":
             self.testcase.visit(self.model)

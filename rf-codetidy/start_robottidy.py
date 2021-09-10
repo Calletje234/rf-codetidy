@@ -42,27 +42,27 @@ class ArgParse:
                 caps = StartCapitilizer(self.args.file, self.args.keyword)
                 white = StartWhiteSpace(self.args.file)
                 doc = StartDocCheck(self.args.file)
-                # TODO spacing = StartSpacing(self.args.file)
-                GetResults(caps, doc, white)
+                spacing = StartSpacing(self.args.file)
+                GetResults(caps, doc, white, spacing)
 
             else:
                 caps = StartCapitilizer(self.args.file)
                 white = StartWhiteSpace(self.args.file)
                 doc = StartDocCheck(self.args.file)
-                # TODO spacing = StartSpacing(self.args.file)
+                # spacing = StartSpacing(self.args.file)
                 GetResults(caps, doc, white)
         else:
             if self.args.keyword != "Default":
                 caps = StartCapitilizer(self.args.file, self.args.keyword)
                 white = StartWhiteSpace(self.args.file)
                 doc = StartDocCheck(self.args.file)
-                # TODO spacing = StartSpacing(self.args.file)
+                # spacing = StartSpacing(self.args.file)
                 GetResults(caps, doc, white)
             else:
                 caps = StartCapitilizer(self.args.file)
                 white = StartWhiteSpace(self.args.file)
                 doc = StartDocCheck(self.args.file)
-                # TODO spacing = StartSpacing(self.args.file)
+                # spacing = StartSpacing(self.args.file)
                 GetResults(caps, doc, white)
 
     @staticmethod
